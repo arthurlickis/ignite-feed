@@ -1,6 +1,6 @@
 # 🔥 Ignite Feed
 
-Uma aplicação de feed social desenvolvida durante o aprendizado de React com a Rocketseat, onde explorei os fundamentos essenciais do ecossistema React moderno.
+Uma aplicação de feed social desenvolvida durante o aprendizado de React, onde explorei os fundamentos essenciais do ecossistema React moderno.
 
 ---
 
