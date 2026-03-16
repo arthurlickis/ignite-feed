@@ -1,77 +1,79 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# 🔥 Ignite Feed
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação de feed social desenvolvida durante o aprendizado de React com a Rocketseat, onde explorei os fundamentos essenciais do ecossistema React moderno.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Sobre o Projeto
 
-## React Compiler
+O **Ignite Feed** é um feed de publicações estilo rede social, onde usuários podem visualizar posts, deixar comentários, curtir (aplaudir) e deletar comentários. O projeto foi construído com foco em aprender os pilares do React de forma prática.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧠 Conceitos Praticados
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ⚛️ **Estrutura do React** — entendendo como o React organiza e renderiza a interface
+- 🧩 **Componentes** — divisão da UI em peças reutilizáveis e independentes
+- 📨 **Props** — comunicação entre componentes pai e filho
+- 🎨 **CSS Modules** — estilização com escopo isolado por componente
+- 🔁 **`.map()` em arrays** — renderização de listas dinâmicas a partir de dados
+- 🔒 **Closures** — uso de funções dentro de funções para encapsular estado e lógica
+- 🧱 **Imutabilidade** — atualização de estado sem mutar diretamente os valores originais
+- 🪝 **useState** — gerenciamento de estado local nos componentes
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🏗️ Estrutura de Componentes
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+├── components/
+│   ├── Avatar.tsx       # Imagem de perfil com ou sem borda
+│   ├── Comment.tsx      # Comentário com like e delete
+│   ├── Header.tsx       # Cabeçalho da aplicação
+│   ├── Post.tsx         # Post completo com formulário de comentário
+│   └── Sidebar.tsx      # Painel lateral com perfil do usuário
+├── App.tsx              # Componente raiz com lista de posts
+├── main.tsx             # Entry point da aplicação
+└── global.css           # Estilos globais
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Tecnologias
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [date-fns](https://date-fns.org/) — formatação de datas
+- [react-icons](https://react-icons.github.io/react-icons/) — ícones
+
+---
+
+## ▶️ Como Rodar
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/ignite-feed.git
+
+# Acesse a pasta
+cd ignite-feed
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
+npm run dev
 ```
-=======
-# ignite-feed-reactts
->>>>>>> 86060d20560bd03132f0b88f0e0e05a9a80d1a50
+
+---
+
+## 📚 Aprendizados Principais
+
+> "Aprender React é aprender a pensar em componentes."
+
+Durante o desenvolvimento deste projeto, entendi na prática como o React funciona: a importância de tratar o estado de forma imutável, como as props criam um fluxo de dados previsível de cima para baixo, e como closures são usadas naturalmente dentro dos handlers de eventos.
+
+---
+
+Made with 💚 during **Ignite** — Rocketseat
