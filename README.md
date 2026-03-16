@@ -73,7 +73,3 @@ npm run dev
 > "Aprender React é aprender a pensar em componentes."
 
 Durante o desenvolvimento deste projeto, entendi na prática como o React funciona: a importância de tratar o estado de forma imutável, como as props criam um fluxo de dados previsível de cima para baixo, e como closures são usadas naturalmente dentro dos handlers de eventos.
-
----
-
-Made with 💚 during **Ignite** — Rocketseat
