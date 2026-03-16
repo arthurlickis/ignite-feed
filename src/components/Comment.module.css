@@ -1,0 +1,51 @@
+.comment {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.commentBox {
+  width: 100%;
+}
+
+.commentContent {
+  background-color: var(--gray-700);
+  border-radius: 8px;
+  padding: 1.4rem 1rem;
+  width: 100%;
+}
+
+.commentContent p {
+  margin-top: 1rem;
+}
+
+.authorAndTime {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.authorAndTime time {
+  font-size: 0.85rem;
+}
+
+button {
+  background-color: transparent;
+  color: var(--gray-500);
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  padding-top: 1rem;
+}
+
+footer button {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+footer button:hover {
+  color: var(--green-500);
+}
